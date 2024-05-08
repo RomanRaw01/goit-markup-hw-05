@@ -609,6 +609,10 @@ address {
     background: #404bbf;
 }
 
+.subscribe-icon {
+    margin-left: 16px;
+}
+
 /*===========MODAL-OVERLAY===========*/
 .modal-overlay {
     background: rgba(46, 47, 66, 0.4);
