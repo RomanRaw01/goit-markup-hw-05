@@ -588,6 +588,7 @@ address {
     padding: 8px 24px;
     width: 165px;
     height: 40px;
+    min-width: 165px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -628,7 +629,7 @@ address {
 
     opacity: 1;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -642,6 +643,7 @@ address {
     background: #fcfcfc;
     width: 408px;
     height: 584px;
+    min-height: 584px;
     overflow: auto;
     position: absolute;
     top: 50%;
@@ -663,12 +665,32 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.close-btn:hover {
+    background-color: #404bbf;
+    border: none;
+}
+
+.close-btn:focus {
+    background-color: #404bbf;
+    border: none;
+}
+
 
 .btn-close {
     fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-close:hover {
+    fill: #ffffff
+}
+
+.btn-close:focus {
+    fill: #ffffff
 }
 
 .modal-p-a {
@@ -709,8 +731,10 @@ address {
     border-radius: 4px;
     width: 360px;
     height: 40px;
+    line-height: 1.17;
     padding-left: 38px;
     margin-top: 4px;
+    display: block;
     background-color: transparent;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
