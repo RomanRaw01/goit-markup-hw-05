@@ -660,6 +660,7 @@ address {
     top: 24px;
     right: 24px;
     background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -672,23 +673,21 @@ address {
 .close-btn:hover {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff
 }
 
 .close-btn:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff
 }
 
 
 .btn-close {
-    fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-close:hover {
-    fill: #ffffff
-}
-
+.btn-close:hover,
 .btn-close:focus {
     fill: #ffffff
 }
