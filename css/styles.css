@@ -719,6 +719,8 @@ address {
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
+    line-height: 1.17;
+    display: block;
 }
 
 .border-input {
@@ -730,7 +732,7 @@ address {
     border-radius: 4px;
     width: 360px;
     height: 40px;
-    line-height: 1.17;
+
     padding-left: 38px;
     margin-top: 4px;
     display: block;
