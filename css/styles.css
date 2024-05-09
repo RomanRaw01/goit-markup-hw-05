@@ -762,11 +762,11 @@ address {
 }
 
 .form-comment {
+    line-height: 1.17;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     height: 120px;
     width: 100%;
-    line-height: 1.17;
     font-size: 12px;
     padding: 8px 16px;
     resize: none;
@@ -802,15 +802,11 @@ address {
     overflow: hidden;
 }
 
-.user-privacy {
+.label-privacy {
     font-size: 12px;
     letter-spacing: 0.04em;
     color: #8e8f99;
     line-height: 1.17;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99
 }
 
 .icon-span {
