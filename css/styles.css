@@ -764,9 +764,9 @@ address {
 .form-comment {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    width: 360px;
     height: 120px;
     width: 100%;
+    line-height: 1.17;
     font-size: 12px;
     padding: 8px 16px;
     resize: none;
@@ -807,6 +807,10 @@ address {
     letter-spacing: 0.04em;
     color: #8e8f99;
     line-height: 1.17;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99
 }
 
 .icon-span {
@@ -822,19 +826,12 @@ address {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-privacy:checked+.input-privacy .icon-span {
-    border: none;
+.input-privacy:checked+label span {
+
     fill: #f4f4fd;
     border: none;
     background-color: #404bbf;
-}
-
-.input-privacy:checked+.input-privacy .icon-span .vector-icon {
-    border: 1px solid rgba(46, 47, 66, 0.4);
-}
-
-.input-privacy:checked+.input-privacy .icon-span .vector-icon:focus {
-    border: 1px solid #404bbf;
+    pointer-events: auto;
 }
 
 .privacy {
